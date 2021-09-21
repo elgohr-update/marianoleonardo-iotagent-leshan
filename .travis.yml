@@ -1,7 +1,0 @@
-language: java
-services:
-  - docker
-script:
-  - 'docker build -t ${TRAVIS_REPO_SLUG} .'
-after_success:
-  - travis/publish.sh
